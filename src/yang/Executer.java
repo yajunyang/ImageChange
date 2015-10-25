@@ -67,5 +67,11 @@ public class Executer {
 		
 		return plugin;
 	}
+	
+	public static void main(String[] args) {
+		int n = 0xABCDEFBA;
+		int fourthBitFromRight = (n & 0b1000)/0b1000; // ***整数***在位模式下工作。
+		System.out.println(fourthBitFromRight);
+	}
 
 }

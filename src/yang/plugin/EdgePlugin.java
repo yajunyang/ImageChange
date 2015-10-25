@@ -88,32 +88,6 @@ public class EdgePlugin implements Plugin {
 	}
 
 	public void laplace() {
-		
-		// 0  -1  0
-		// -1  4 -1 
-		// 0  -1  0
-		
-//		int kernelSize = 3;
-//		Mat source = Yang.img2Mat(im);
-//		Mat destination = new Mat(source.rows(), source.cols(), source.type());
-//		Mat kernel = new Mat(kernelSize, kernelSize, CvType.CV_32F) {
-//			{
-//				put(0, 0, 0);
-//				put(0, 1, -1);
-//				put(0, 2, 0);
-//
-//				put(1, 0 - 1);
-//				put(1, 1, 4);
-//				put(1, 2, -1);
-//
-//				put(2, 0, 0);
-//				put(2, 1, -1);
-//				put(2, 2, 0);
-//			}
-//		};
-//		Imgproc.filter2D(source, destination, -1, kernel);
-//		Yang.setResultImage(Yang.mat2Img(destination));
-		
 		float[] kernel= {0, -1, 0, -1, 4, -1, 0, -1, 0};
 		BufferedImage result = Yang.convolveNxN(im, kernel, 3, false);
 		Yang.setResultImage(result);

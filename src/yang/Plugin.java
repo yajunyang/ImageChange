@@ -15,3 +15,4 @@ public interface Plugin {
 	
 	static final Random random = new Random();
 }
+
