@@ -41,7 +41,7 @@ public class YangWindow extends JFrame{
 	private JLabel labelResult;
 	
 	Executer executer = Executer.getExecuterInstance();
-	 
+ 
 	static{
 		BufferedImage image;
 		try {
